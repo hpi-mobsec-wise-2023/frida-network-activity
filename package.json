@@ -1,13 +1,13 @@
 {
-  "name": "frida-agent-example",
+  "name": "frida-network-activity",
   "version": "1.0.0",
-  "description": "Example Frida agent written in TypeScript",
+  "description": "Frida script to track network activity",
   "private": true,
-  "main": "agent/index.ts",
+  "main": "tracker/index.ts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "frida-compile agent/index.ts -o _agent.js -c",
-    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+    "build": "frida-compile tracker/index.ts -o _tracker.js -c",
+    "watch": "frida-compile tracker/index.ts -o _tracker.js -w"
   },
   "devDependencies": {
     "@types/frida-gum": "^18.5.1",
